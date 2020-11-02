@@ -10,6 +10,7 @@ namespace AlertToCareAPI.Repo
 {
     public class MonitorinRepository : IMonitoringRepo
     {
+        private readonly DataContext _context;
         public IEnumerable<Alert> GetAllActiveAlerts(string icuID)
         {
             
